@@ -1,67 +1,44 @@
-# Chilean Payroll System 2026
+# Payroll System for Chile 2026
 
-## Overview
-This README provides comprehensive instructions for utilizing the Chilean payroll system for the year 2026. The system is designed to assist in calculating employee remunerations accurately and efficiently.
+## Introduction
+This document provides comprehensive documentation for the Payroll System designed for Chile in the year 2026. The payroll system aims to simplify the management of employee compensations, deductions, and social contributions in compliance with Chilean labor laws.
 
-## Sheets Structure
-The payroll system consists of the following key sheets:
+## Features
+- **Employee Management**: Add, update, and remove employee records.
+- **Salary Calculations**: Automatic calculations for gross salary, deductions, taxes, and net salary.
+- **Compliance**: Ensure adherence to Chilean regulations, including adjustments for inflation.
+- **Reports**: Generate reports for various payroll-related metrics and statistics.
 
-1. **Employee Data Sheet**  
-   - Columns:  
-     - Employee ID  
-     - Name  
-     - Address  
-     - Position  
-     - Base Salary  
-     - Contract Type  
-     - Start Date  
+## System Requirements
+- **Operating System**: Compatible with Windows, macOS, and Linux.
+- **Database**: Requires a MySQL or PostgreSQL database for storing employee records and payroll data.
+- **Programming Language**: Developed using Python and JavaScript.
 
-2. **Payroll Calculation Sheet**  
-   - Columns:  
-     - Employee ID  
-     - Gross Salary  
-     - Deductions  
-     - Net Salary  
+## Installation
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/blackmolco/calculadora-remuneraciones-chile.git
+   ```
+2. **Install Dependencies**:
+   Navigate to the project directory and run:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Set Up Database**:
+   Follow the database setup instructions in the README to create the necessary tables.
+4. **Run the Application**:
+   Execute the main application script:
+   ```bash
+   python app.py
+   ```
 
-3. **Deductions Sheet**  
-   - Columns:  
-     - Employee ID  
-     - Type of Deduction  
-     - Amount  
-     - Reason  
+## Usage
+- **Adding Employees**:
+  - Navigate to the Employee tab, fill in the details and click 'Add'.
+- **Processing Payroll**:
+  - Select the period and click 'Process Payroll'.
+- **Generating Reports**:
+  - Use the Reports tab to generate desired reports.
 
-4. **Summary Sheet**  
-   - Shows aggregated data such as total gross salary, total deductions, and total net salary for all employees.
-
-## Formulas Used
-- **Gross Salary Calculation**:  
-   `=Base Salary + Overtime + Bonuses`
-- **Deductions Calculation**:  
-   `=SUM(Deductions Sheet!C:C)`  
-   (Sums all deductions listed in the Deductions Sheet)
-- **Net Salary Calculation**:  
-   `=Gross Salary - Total Deductions`
-
-## Usage Guide
-1. **Input Employee Data**:  
-   - Fill in the Employee Data Sheet with accurate details of each employee.  
-   - Ensure all required fields are completed.
-
-2. **Calculate Payroll**:  
-   - After entering employee data, navigate to the Payroll Calculation Sheet.  
-   - Use provided formulas to calculate gross salary and deductions automatically.
-
-3. **Review Deductions**:  
-   - Refer to the Deductions Sheet to list any deductions applicable to employees.  
-   - Ensure this information is accurate before finalizing payroll.
-
-4. **Generate Summary**:  
-   - Use the Summary Sheet to view aggregated payroll data.  
-   - Review totals for compliance and record-keeping purposes.
-
-5. **Export/Print**:  
-   - Once all data is verified and calculated, export or print the necessary sheets as needed for payroll distribution.
-
-## Additional Information
-- Ensure to review the latest updates to Chilean labor laws as they may affect payroll calculations.
-- Backup your data regularly to prevent loss of information.
+## Conclusion
+This payroll system is designed to ensure efficient management of employee payroll in Chile, enabling employers to comply with legal requirements while providing accurate compensation to their employees. For further questions, please refer to the project's issues page or contact the development team.
